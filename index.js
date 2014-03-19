@@ -1,13 +1,8 @@
 var getStyleProperty = require('get-style-property');
-var getStyle = require('get-style');
+var getStyle = require('get-style').getStyle;
+var getStyleSize = require('get-style').getStyleSize;
+
 var document = window.document;
-// get a number from a string, not a percentage
-function getStyleSize( value ) {
-  var num = parseFloat( value );
-  // not a percent like '100%', and a number
-  var isValid = value.indexOf('%') === -1 && !isNaN( num );
-  return isValid && num;
-}
 
 // -------------------------- measurements -------------------------- //
 
