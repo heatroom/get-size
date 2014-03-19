@@ -1,6 +1,6 @@
 var getStyleProperty = require('get-style-property');
 var getStyle = require('get-style');
-
+var document = window.document;
 // get a number from a string, not a percentage
 function getStyleSize( value ) {
   var num = parseFloat( value );
@@ -35,7 +35,7 @@ function getZeroSize() {
     outerWidth: 0,
     outerHeight: 0
   };
-  for ( var i=0, len = measurements.length; i < len; i++ ) {
+  for ( var i = 0, len = measurements.length; i < len; i++ ) {
     var measurement = measurements[i];
     size[ measurement ] = 0;
   }
