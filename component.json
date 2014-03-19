@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "heatroom/get-style-property": "*"
+    "heatroom/get-style-property": "*",
+    "heatroom/get-style": "*"
   },
   "development": {},
   "license": "MIT",

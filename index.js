@@ -1,16 +1,5 @@
 var getStyleProperty = require('get-style-property');
-
-// -------------------------- helpers -------------------------- //
-
-var defView = window.document.defaultView;
-
-var getStyle = defView && defView.getComputedStyle ?
-  function( elem ) {
-    return defView.getComputedStyle( elem, null );
-  } :
-  function( elem ) {
-    return elem.currentStyle;
-  };
+var getStyle = require('get-style');
 
 // get a number from a string, not a percentage
 function getStyleSize( value ) {
