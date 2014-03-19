@@ -2,7 +2,7 @@ var getStyleProperty = require('get-style-property');
 
 // -------------------------- helpers -------------------------- //
 
-var defView = document.defaultView;
+var defView = window.document.defaultView;
 
 var getStyle = defView && defView.getComputedStyle ?
   function( elem ) {
